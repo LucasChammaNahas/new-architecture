@@ -3,7 +3,7 @@ import { Provider } from '../../../../Common/Context/Context';
 import useMarioStates from '../../States/State1';
 import handlersFun from './functions';
 
-export default function Page1(props) {
+export default function EventsPage(props) {
   const states = useMarioStates();
   const handlers =  handlersFun(states);
   
