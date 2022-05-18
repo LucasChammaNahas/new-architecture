@@ -1,11 +1,11 @@
 import { useStates } from '../../../Common/Context/Context';
 
 export default function Form1() {
-  const { state, setState } = useStates()
+  const {states, handlers} = useStates();
   return (
     <div>
-      <button onClick={() => setState('tamandua')}>Form 1</button>
-      {state}
+    <button onClick={handlers.handleButtonClick}>Form 1</button>
+    {states.cap}
     </div>
   );
 }
