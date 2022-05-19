@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MarioPage1 from '../Projects/Mario/Pages/Page1/Page1';
+import EventsPage1 from '../Projects/Events/Pages/EventsPage/EventsPage';
 
 export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/mario1" element={<MarioPage1 />} />
+        <Route path="/" element={<EventsPage1 />} />
       </Routes>
     </BrowserRouter>
   );
